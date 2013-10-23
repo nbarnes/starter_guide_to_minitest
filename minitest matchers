@@ -1,0 +1,6 @@
+minitest matchers
+
+must_equal(value) / wont_equal(value)
+must_be_instance_of(class) / wont_be_instance_of(class)
+must_raise(exception) / wont_raise(exception)
+must_be_nil / wont_be_nil

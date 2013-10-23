@@ -1,0 +1,50 @@
+How to get a simple Ruby application started with Minitest
+
+1) It's easy to set up a very simple Ruby application.  Look, there's one now!
+
+2) But, like any application, I need tests to make sure my code does what I
+  want.  Even the smallest program is vulnerable to typos and lack of sleep
+  on the part of the programmer.
+
+3) Enter Minitest!  Minitest is faster and smaller in code footprint than the
+  other leading testing framework for Ruby, RSpec.
+
+4) First, make sure you have minitest installed.  If you aren't sure, type gem
+  install minitest at your command line.  It's a safe command even if you
+  already have minitest, so if you have fun executing it, you can do it over
+  and over.
+
+5) You can write tests anywhere in your code's directory, but a little
+  organization can help keep your project easy to read and understand.  Let's
+  make a /test directory within our project directory and put our tests
+  there.
+
+6) minitest's core functionality involves invoking the code to be tested and
+  predicting its output to be what the programmer had in mind. To this end, it
+  offers methods such as must_equal(value) or wont_equal(value). Here's a simple test for some simple code.
+
+7) We'll need to include some require statments.  Two to make sure our test
+  knows about minitest and one to point the test at its source code.
+
+8) And here's the command to run the test.
+
+9) But what if we wanted to run more than one test file? Or we just didn't
+  want to navigate to /test and type all that in every time we made a simple
+  change?
+
+10) Let's create a Rakefile. rake is a command line utility that comes along
+  with ruby and can be extended with new tasks by entries in the Rakefile.
+  Let's add a task to rake to make running our tests easy and fun fun fun!
+
+11) Even better, let's not even have to type that much.
+
+11) There! Now we have tests for our code and the ability to run them easily.
+  With this in place, who would want to live in a world without quick and
+  easy testing with Minispec? Certainly not I!
+
+12) Extra credit!  Remember those two minitest require statements in our test?
+  They're fine for now, but who would want the hassle of retyping them into
+  every test file we create for this system?  Let's move them.  Voila, into
+  the Rakefile, where they will be active for every test we run.  No more
+  slapping ourselves on the forehead every time we make a new test and forget
+  to type those in.  I was getting a headache from that.
