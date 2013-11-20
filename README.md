@@ -13,5 +13,5 @@ Rails web development toolkit.
 
 This presentation was written by myself, Nathaniel Barnes, and given to my
 class at CodeFellow's Ruby on Rails bootcamp on Friday the 25th, October
-2013.  A video of the presentation will be posted shortly and this README.md
-updated with a link to watch it.
+2013.  A video of the presentation can be found at
+http://www.youtube.com/watch?v=LtOEOTxxEkA
